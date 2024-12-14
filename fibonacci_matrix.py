@@ -1,5 +1,3 @@
-#fibonacci code using matrix.
-
 MOD = 10**9 + 7
 
 def matrix_multiply(A, B):
@@ -18,6 +16,7 @@ def matrix_exponentiation(matrix, power):
         matrix = matrix_multiply(matrix, matrix)
         power //= 2
     return result
+#random test
 
 def fibonacci_matrix(n):
     if n == 1 or n == 2:
@@ -25,14 +24,6 @@ def fibonacci_matrix(n):
     F = [[1, 1], [1, 0]]
     result = matrix_exponentiation(F, n - 1)
     return result[0][0]
-#This function is not needed!
-def add(a,b):
-    a,b = input().split()
-    if a>b:
-        print(a+b)
-   
-    else:
-        print(a-b)
 
 # Test
 n = int(input("Enter the position of the Fibonacci number: "))
