@@ -26,6 +26,15 @@ def fibonacci_matrix(n):
     return result[0][0]
 
 #this is a sample code
+def add(a,b):
+    a,b = input().split()
+    if a>b:
+        print(a+b)
+    elif a==0 or b==0:
+        print(a,b)
+    else:
+        print(a-b)
+
 
 # Test
 n = int(input("Enter the position of the Fibonacci number: "))
