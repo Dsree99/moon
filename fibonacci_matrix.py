@@ -29,6 +29,8 @@ def add(a,b):
     a,b = input().split()
     if a>b:
         print(a+b)
+    else:
+        print(a-b)
 
 # Test
 n = int(input("Enter the position of the Fibonacci number: "))
