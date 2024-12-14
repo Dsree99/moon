@@ -25,10 +25,13 @@ def fibonacci_matrix(n):
     F = [[1, 1], [1, 0]]
     result = matrix_exponentiation(F, n - 1)
     return result[0][0]
+#This function is not needed!
 def add(a,b):
     a,b = input().split()
     if a>b:
         print(a+b)
+    elif a==0 or b==0:
+        print(a,b)
     else:
         print(a-b)
 
