@@ -25,6 +25,8 @@ def fibonacci_matrix(n):
     result = matrix_exponentiation(F, n - 1)
     return result[0][0]
 
+#this is a sample code
+
 # Test
 n = int(input("Enter the position of the Fibonacci number: "))
 print(f"The {n}th Fibonacci number is {fibonacci_matrix(n)}")
